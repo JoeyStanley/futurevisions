@@ -2,3 +2,6 @@
 *.Rbuildignore
 *.Rhistory
 *.Rproj.user
+*.DS_Store
+posters
+sandbox*
