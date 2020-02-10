@@ -13,7 +13,6 @@
 #   Check Package:             'Cmd + Shift + E'
 #   Test Package:              'Cmd + Shift + T'
 
-hello <- function() {
-  print("Hello, world!")
+futurevisions <- function(palette) {
+
 }
-## A small R package with color palettes based on NASA's Visions of the Future poster series
