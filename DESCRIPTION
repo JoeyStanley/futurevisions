@@ -4,8 +4,7 @@ Title: What the Package Does (Title Case)
 Version: 0.1.0
 Author: Joey Stanley
 Maintainer: Joey Stanley <joeystan@uga.edu>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: A small R package with color palettes based on NASA's Visions of the Future poster series.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
