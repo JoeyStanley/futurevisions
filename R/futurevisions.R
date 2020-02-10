@@ -1,7 +1,7 @@
 # Will add desciption file later.
 
 futurevisions <- function(palette) {
-  switch(palette,
+  switch(tolower(palette),
          "venus"   = c("#EDB992", "#FEF9F4", "#6B8A8D", "#ABAAA6", "#4B5453"),
          "earth"   = c("#3B4B42", "#75AC42", "#B0D9CB", "#FFFFFE", "#FCF063", "#935932", "#642E2A"),
          "mars"    = c("#DB3A2F", "#EAB33A", "#275D8E", "#902A57", "#F7EBD3", "#0B0C0B"),
