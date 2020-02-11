@@ -8,48 +8,92 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # futurevisions
 
-A small R package with color palettes based on NASA's Visions of the Future poster series.
+A small R package with color palettes based on NASA's [Visions of the Future](https://www.jpl.nasa.gov/visions-of-the-future/) poster series. 
 
-NASA has produced a series of posters called [Visions of the Future](https://www.jpl.nasa.gov/visions-of-the-future/). They are retro-future-style posters depecting humans visiting other planets, moons, and exo-planets. The main library at the University of Georgia has some of them hanging up on one of the hallways I walk down every day. I thought they might make for a fun series of color palettes. 
+These posters were produced through NASA's Jet Propulsion Laboratory through the California Institute of Technology. They are retro-future-style posters depecting humans visiting other planets, moons, and exo-planets. In their words, 
 
-# List of Palettes
+> Imagination is our window into the future. At NASA/JPL we strive to be bold in advancing the edge of possibility so that someday, with the help of new generations of innovators and explorers, these visions of the future can become a reality. As you look through these images of imaginative travel destinations, remember that you can be an architect of the future.
 
-![](images/venus.png)
+The posters are available for download for free. You can get them as PDFs or as 20x30 inch TIFF files. 
 
-![](images/earth.png)
+## Demo
 
-![](images/mars.png)
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(ggplot2)
+source("R/futurevisions.R")
+```
 
-![](images/jupiter.png)
+The main two functions are `futurevisions`, which returns a list of colors, and `show_palette`, which produces a simple image using `ggplot2` to highlight the colors. For example, here is the palette called `mars`. 
 
-![](images/ceres.png)
+```{r, fig.width = 6, fig.height = 3}
+show_palette("mars")
+futurevisions("mars")
+```
 
-![](images/enceladus.png)
+This can be easily used within `ggplot2` using `scale_color_manual`:
 
-![](images/europa.png)
+```{r}
+ggplot(mpg, aes(cty, hwy, color = factor(cyl))) +
+  geom_jitter() +
+  scale_color_manual(values = futurevisions("mars"))
+```
 
-![](images/titan.png)
+## Note on color selection 
 
-![](images/cancri.png)
+This is not a rigorous samping of colors. I picked a few colors from each poster that I felt were represtentative. They may not necessarily be colorblind-friendly. When using these palettes in data visualization, take care to ensure that your data is not misrepresented. 
 
-![](images/hd.png)
+# List of palettes
 
-![](images/kepler186.png)
+## Gradient
 
-![](images/kepler16b.png)
+These are palettes that may lend themselves better to more gradient purposes. 
 
-![](images/pegasi.png)
+```{r, fig.width = 6, fig.height = 3}
+show_palette("ceres")
+show_palette("europa")
+show_palette("titan")
+show_palette("cancri")
+show_palette("pso")
+```
 
-![](images/pso.png)
 
-![](images/trappest.png)
+## Diverging
 
-![](images/grand_tour.png)
+These are palettes that may lend themselves more to highlighting deviations from a center point.  
 
-![](images/atomic_clock.png)
+```{r, fig.width = 6, fig.height = 3}
+show_palette("earth")
+show_palette("enceladus")
+show_palette("kepler186")
+show_palette("trappest")
+show_palette("atomic_clock")
+```
 
-![](images/atomic_red.png)
+## Categorical 
 
-![](images/atomic_blue.png)
+These are palettes that may lend themselves more to purposes where each color is a stand-alone entity with no meaningful order.
 
-![](images/atomic_orange.png)
+```{r, fig.width = 6, fig.height = 3}
+show_palette("venus")
+show_palette("mars")
+show_palette("jupiter")
+show_palette("hd")
+show_palette("kepler16b")
+show_palette("pegasi")
+show_palette("grand_tour")
+show_palette("atomic_red")
+show_palette("atomic_blue")
+show_palette("atomic_orange")
+```
+
+
+# Background
+
+A portion of the 3rd floor of the Main Library at the University of Georgia has been designed to be evocative of the 1950s when the library was first built. It has some retro-style furniture in a nice study room. It also has some of these Visions of the Future posters hanging up in the hallway. I walk down that hallway every day since the linguistics books, the DigiLab, the best study room on campus, and my personal carrell are all on that floor. 
+
+In fall 2019 I put together a series of workshops on data visualization. One of them was devoted to color, and in preparations for it, I saw that people have made color palettes based on all sorts of things: [Wes Anderson movies](https://www.designcontest.com/blog/inspiration-gallery-wes-anderson-color-palettes/), [Skittles](http://alyssafrazee.com/2014/03/06/RSkittleBrewer.html), [Pokemon](http://pokepalettes.com), you name it. I had the idea that the posters on that floor might make for some fun color palettes. 
+
+I put off making the palettes themselves until now (February 2020). 
+
+
+
