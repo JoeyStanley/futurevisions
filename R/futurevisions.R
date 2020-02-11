@@ -27,7 +27,7 @@
 
 futurevisions <- function(palette) {
 
-  switch(as.character(tolower(palette_string)),
+  switch(as.character(tolower(palette)),
 
          # Planets
          "venus"   = c("#EDB992", "#FEF9F4", "#6B8A8D", "#ABAAA6", "#4B5453"),
