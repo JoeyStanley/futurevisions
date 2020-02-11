@@ -62,8 +62,6 @@ futurevisions <- function(palette) {
 
          stop('The palette must be one of the following: "venus", "earth", "mars", "jupiter", "ceres", "enceladus", "europa", "titan", "cancri", "hd",  "kepler186", "kepler 16b", "pegasi", "pso", "trappest", grand_tour", "atomic_clock", "atomic_red", "atomic_blue", or "atomic_orange'))
 }
-futurevisions(jupiter)
-futurevisions("jupiter")
 
 
 
@@ -109,5 +107,3 @@ show_palette <- function(palette) {
           plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
           plot.margin = margin(0, 0, 0, 0, "in"))
 }
-show_palette(jupiter)
-show_palette("jupiter")
