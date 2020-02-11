@@ -6,7 +6,7 @@
 #' of Technology. For more information, including links free to full-sized versions of the
 #' posters, please see https://www.jpl.nasa.gov/visions-of-the-future/
 #'
-#' @param palette A bare or quoted string.
+#' @param palette A string.
 #'
 #' @return A vector of colors in hexidecimal formant.
 #'
@@ -26,8 +26,6 @@
 #'    scale_color_manual(values = futurevisions("mars"))
 
 futurevisions <- function(palette) {
-  # If it's not a string, convert it into one
-  palette_string <- ifelse(assertthat::is.string(palette), palette, deparse(substitute(palette)))
 
   switch(as.character(tolower(palette_string)),
 
@@ -70,7 +68,7 @@ futurevisions <- function(palette) {
 #' @description
 #' This function displays a simple plot showing the colors and hexideciimal codes for one palette.
 #'
-#' @param palette A bare or quoted string with the same of a palette.
+#' @param palette A string with the name of a palette.
 #'
 #' @return A ggplot object.
 #'
@@ -84,15 +82,7 @@ futurevisions <- function(palette) {
 #' show_palette("mars")
 #'
 show_palette <- function(palette) {
-  # If it's not a string, convert it into one
-  palette_string <- ifelse(assertthat::is.string(palette), palette, deparse(substitute(palette)))
-
-  pal <- futurevisions(palette_string)
   n_colors <- length(pal)
-
-  title <- palette_string %>%
-    str_replace_all("_", " ") %>%
-    str_to_title()
 
   tibble(x = 1:n_colors, color = pal) %>%
     ggplot(aes(x, fill = color)) +
@@ -101,7 +91,7 @@ show_palette <- function(palette) {
     scale_fill_identity() +
     scale_x_continuous(expand = c(0, 0)) +
     scale_y_continuous(expand = expand_scale(c(0, 0), c(0.1, 0.01)))+
-    labs(title = title) +
+    labs(title = palette_string) +
     theme_void() +
     theme(legend.position = "none",
           plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
