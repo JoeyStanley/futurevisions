@@ -202,10 +202,11 @@ the hallway. I walk down that hallway every day since the linguistics
 books, the DigiLab, the best study room on campus, and my personal
 carrell are all on that floor.
 
-In fall 2019 I put together a series of workshops on data visualization.
-One of them was devoted to color, and in preparations for it, I saw that
-people have made color palettes based on all sorts of things: [Wes
-Anderson
+In fall 2019 I put together [a series of
+workshops](http://joeystanley.com/pages/dataviz) on data visualization.
+[One of them](http://joeystanley.com/downloads/191023-color.pdf) was
+devoted to color, and in preparations for it, I saw that people have
+made color palettes based on all sorts of things: [Wes Anderson
 movies](https://www.designcontest.com/blog/inspiration-gallery-wes-anderson-color-palettes/),
 [Skittles](http://alyssafrazee.com/2014/03/06/RSkittleBrewer.html),
 [Pokemon](http://pokepalettes.com), you name it. I had the idea that the
