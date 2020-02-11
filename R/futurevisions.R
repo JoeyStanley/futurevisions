@@ -13,7 +13,7 @@
 #' @details
 #' Current options are "venus", "earth", "mars", "jupiter",
 #' "ceres", "enceladus", "europa", "titan",
-#' "cancri", "hd", "kepler186", "kepler 16b", "pegasi", "pso", "trappest",
+#' "cancri", "hd", "kepler186", "kepler16b", "pegasi", "pso", "trappest",
 #' grand_tour", "atomic_clock", "atomic_red", "atomic_blue", and "atomic_orange".
 #'
 #' @examples
@@ -58,7 +58,7 @@ futurevisions <- function(palette) {
          "atomic_orange" = c("#09283C", "#F18B00", "#F2EBBB"),
 
 
-         stop('The palette must be one of the following: "venus", "earth", "mars", "jupiter", "ceres", "enceladus", "europa", "titan", "cancri", "hd",  "kepler186", "kepler 16b", "pegasi", "pso", "trappest", grand_tour", "atomic_clock", "atomic_red", "atomic_blue", or "atomic_orange'))
+         stop('The palette must be one of the following: "venus", "earth", "mars", "jupiter", "ceres", "enceladus", "europa", "titan", "cancri", "hd",  "kepler186", "kepler16b", "pegasi", "pso", "trappest", grand_tour", "atomic_clock", "atomic_red", "atomic_blue", or "atomic_orange'))
 }
 
 
@@ -75,7 +75,7 @@ futurevisions <- function(palette) {
 #' @details
 #' Current options are "venus", "earth", "mars", "jupiter",
 #' "ceres", "enceladus", "europa", "titan",
-#' "cancri", "hd", "kepler186", "kepler 16b", "pegasi", "pso", "trappest",
+#' "cancri", "hd", "kepler186", "kepler16b", "pegasi", "pso", "trappest",
 #' grand_tour", "atomic_clock", "atomic_red", "atomic_blue", and "atomic_orange".
 #'
 #' @examples
