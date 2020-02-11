@@ -82,16 +82,16 @@ futurevisions <- function(palette) {
 #' show_palette("mars")
 #'
 show_palette <- function(palette) {
+  pal <- futurevisions(palette)
   n_colors <- length(pal)
 
-  tibble(x = 1:n_colors, color = pal) %>%
-    ggplot(aes(x, fill = color)) +
+  ggplot(data = data.frame(x = 1:n_colors, color = pal), aes(x, fill = color)) +
     geom_col(aes(y = 1), width = 1) +
     geom_text(aes(label = color), y = -0.04) +
     scale_fill_identity() +
     scale_x_continuous(expand = c(0, 0)) +
     scale_y_continuous(expand = expand_scale(c(0, 0), c(0.1, 0.01)))+
-    labs(title = palette_string) +
+    labs(title = palette) +
     theme_void() +
     theme(legend.position = "none",
           plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
