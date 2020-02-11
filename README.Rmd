@@ -89,7 +89,7 @@ show_palette("atomic_orange")
 
 # Background
 
-A portion of the 3rd floor of the Main Library at the University of Georgia has been designed to be evocative of the 1950s when the library was first built. It has some retro-style furniture in a nice study room. It also has some of these Visions of the Future posters hanging up in the hallway. I walk down that hallway every day since the linguistics books, the DigiLab, the best study room on campus, and my personal carrell are all on that floor. 
+A portion of the 3rd floor of the Main Library at the University of Georgia has been designed to be evocative of the 1950s when the library was first built. It has some retro-style furniture in a nice study room. It also has some of these Visions of the Future posters hanging up in the hallway. I walk down that hallway every day since the linguistics books, the [DigiLab](https://digi.uga.edu), the best study room on campus, and my personal carrell are all on that floor. 
 
 In fall 2019 I put together [a series of workshops](http://joeystanley.com/pages/dataviz) on data visualization. [One of them](http://joeystanley.com/downloads/191023-color.pdf) was devoted to color, and in preparations for it, I saw that people have made color palettes based on all sorts of things: [Wes Anderson movies](https://www.designcontest.com/blog/inspiration-gallery-wes-anderson-color-palettes/), [Skittles](http://alyssafrazee.com/2014/03/06/RSkittleBrewer.html), [Pokemon](http://pokepalettes.com), you name it. I had the idea that the posters on that floor might make for some fun color palettes. 
 

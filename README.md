@@ -199,7 +199,7 @@ Georgia has been designed to be evocative of the 1950s when the library
 was first built. It has some retro-style furniture in a nice study room.
 It also has some of these Visions of the Future posters hanging up in
 the hallway. I walk down that hallway every day since the linguistics
-books, the DigiLab, the best study room on campus, and my personal
+books, the [DigiLab](https://digi.uga.edu), the best study room on campus, and my personal
 carrell are all on that floor.
 
 In fall 2019 I put together [a series of
