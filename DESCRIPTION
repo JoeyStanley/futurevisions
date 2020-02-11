@@ -1,11 +1,14 @@
-Package: VotF
+Package: futurevisions
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Color Palettes based on Visions of the Future Poster Series
 Version: 0.1.0
 Author: Joey Stanley
 Maintainer: Joey Stanley <joeystan@uga.edu>
-Description: A small R package with color palettes based on NASA's Visions of the Future poster series.
+Description: A small R package with color palettes based on NASA's
+    Visions of the Future poster series. It contains one primary
+    function (`futurevisions`) that returns one palette.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-URL: http://github.com/JoeyStanley/VotF
+URL: http://github.com/JoeyStanley/futurevisions
+RoxygenNote: 7.0.2
