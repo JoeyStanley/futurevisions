@@ -1,8 +1,10 @@
 *.Rproj
+.Rproj.user
 *.Rbuildignore
 *.Rhistory
 *.Rproj.user
 *.DS_Store
 posters
 sandbox*
-.Rproj.user
+export_images*
+
