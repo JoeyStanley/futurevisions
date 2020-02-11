@@ -21,6 +21,21 @@ PDFs or as 20x30 inch TIFF files.
 
 ## Demo
 
+You can install the package through github. The library imports
+`ggplot2`, so if there are problems, make sure you have `ggplot2`
+installed already. (I’m not good at testing things so if there is
+trouble, let me know.)
+
+``` r
+devtools::install_github("JoeyStanley/futurevisions")
+```
+
+You can then load it like a normal R package.
+
+``` r
+library(futurevisions)
+```
+
 The main two functions are `futurevisions`, which returns a list of
 colors, and `show_palette`, which produces a simple image using
 `ggplot2` to highlight the colors. For example, here is the palette
@@ -30,7 +45,7 @@ called `mars`.
 show_palette("mars")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
 futurevisions("mars")
@@ -46,7 +61,7 @@ ggplot(mpg, aes(cty, hwy, color = factor(cyl))) +
   scale_color_manual(values = futurevisions("mars"))
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ## Note on color selection
 
@@ -66,31 +81,31 @@ purposes.
 show_palette("ceres")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ``` r
 show_palette("europa")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
 ``` r
 show_palette("titan")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-3.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-6-3.png)<!-- -->
 
 ``` r
 show_palette("cancri")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-4.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-6-4.png)<!-- -->
 
 ``` r
 show_palette("pso")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-5.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-6-5.png)<!-- -->
 
 ## Diverging
 
@@ -101,31 +116,31 @@ deviations from a center point.
 show_palette("earth")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ``` r
 show_palette("enceladus")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
 ``` r
 show_palette("kepler186")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-3.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-3.png)<!-- -->
 
 ``` r
 show_palette("trappest")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-4.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-4.png)<!-- -->
 
 ``` r
 show_palette("atomic_clock")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-5.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-5.png)<!-- -->
 
 ## Categorical
 
@@ -136,61 +151,61 @@ color is a stand-alone entity with no meaningful order.
 show_palette("venus")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ``` r
 show_palette("mars")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
 
 ``` r
 show_palette("jupiter")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-3.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->
 
 ``` r
 show_palette("hd")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-4.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->
 
 ``` r
 show_palette("kepler16b")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-5.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-5.png)<!-- -->
 
 ``` r
 show_palette("pegasi")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-6.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-6.png)<!-- -->
 
 ``` r
 show_palette("grand_tour")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-7.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-7.png)<!-- -->
 
 ``` r
 show_palette("atomic_red")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-8.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-8.png)<!-- -->
 
 ``` r
 show_palette("atomic_blue")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-9.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-9.png)<!-- -->
 
 ``` r
 show_palette("atomic_orange")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-10.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-10.png)<!-- -->
 
 # Background
 
@@ -199,8 +214,8 @@ Georgia has been designed to be evocative of the 1950s when the library
 was first built. It has some retro-style furniture in a nice study room.
 It also has some of these Visions of the Future posters hanging up in
 the hallway. I walk down that hallway every day since the linguistics
-books, the [DigiLab](https://digi.uga.edu), the best study room on campus, and my personal
-carrell are all on that floor.
+books, the [DigiLab](https://digi.uga.edu), the best study room on
+campus, and my personal carrell are all on that floor.
 
 In fall 2019 I put together [a series of
 workshops](http://joeystanley.com/pages/dataviz) on data visualization.

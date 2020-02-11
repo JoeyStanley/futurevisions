@@ -23,6 +23,18 @@ library(ggplot2)
 source("R/futurevisions.R")
 ```
 
+You can install the package through github. The library imports `ggplot2`, so if there are problems, make sure you have `ggplot2` installed already. (I'm not good at testing things so if there is trouble, let me know.)
+
+```{r, eval = FALSE}
+devtools::install_github("JoeyStanley/futurevisions")
+```
+
+You can then load it like a normal R package.
+
+```{r, eval = FALSE}
+library(futurevisions)
+```
+
 The main two functions are `futurevisions`, which returns a list of colors, and `show_palette`, which produces a simple image using `ggplot2` to highlight the colors. For example, here is the palette called `mars`. 
 
 ```{r, fig.width = 6, fig.height = 3}
