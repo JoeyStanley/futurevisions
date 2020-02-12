@@ -2,6 +2,7 @@ Package: futurevisions
 Type: Package
 Title: Color Palettes based on Visions of the Future Poster Series
 Version: 0.1.0
+Date: 2020-02-11
 Author: Joey Stanley
 Maintainer: Joey Stanley <joeystan@uga.edu>
 Description: A small R package with color palettes based on NASA's
