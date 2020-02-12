@@ -36,7 +36,7 @@ futurevisions <- function(palette) {
          "jupiter" = c("#882B6A", "#EB9FAF", "#4E9678", "#303251", "#0C0D0E", "#BDC1D4"),
 
          # Moons
-         "ceres"     = c("#F8F9FA", "#6F8BA0", "#4A5F71", "#181D20"),
+         "ceres"     = c("#181D20", "#4A5F71", "#6F8BA0", "#F8F9FA"),
          "enceladus" = c("#1C1113", "#1A2A29", "#D1DCCE", "#CE512C", "#5D1722"),
          "europa"    = c("#030F1E", "#253473", "#4982B6", "#8CCCE4", "#DFEBF1"),
          "titan"     = c("#0C0C0B", "#58271A", "#752021", "#DF5730", "#DC942F", "#FDEE92"),
