@@ -77,7 +77,6 @@ These are palettes that may lend themselves more to highlighting deviations from
 show_palette("earth")
 show_palette("enceladus")
 show_palette("kepler186")
-show_palette("trappest")
 show_palette("atomic_clock")
 ```
 
@@ -92,6 +91,7 @@ show_palette("jupiter")
 show_palette("hd")
 show_palette("kepler16b")
 show_palette("pegasi")
+show_palette("trappest")
 show_palette("grand_tour")
 show_palette("atomic_red")
 show_palette("atomic_blue")

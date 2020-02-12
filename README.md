@@ -131,16 +131,10 @@ show_palette("kepler186")
 ![](README_files/figure-gfm/unnamed-chunk-7-3.png)<!-- -->
 
 ``` r
-show_palette("trappest")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-7-4.png)<!-- -->
-
-``` r
 show_palette("atomic_clock")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-7-5.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-4.png)<!-- -->
 
 ## Categorical
 
@@ -184,28 +178,34 @@ show_palette("pegasi")
 ![](README_files/figure-gfm/unnamed-chunk-8-6.png)<!-- -->
 
 ``` r
-show_palette("grand_tour")
+show_palette("trappest")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-8-7.png)<!-- -->
 
 ``` r
-show_palette("atomic_red")
+show_palette("grand_tour")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-8-8.png)<!-- -->
 
 ``` r
-show_palette("atomic_blue")
+show_palette("atomic_red")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-8-9.png)<!-- -->
 
 ``` r
-show_palette("atomic_orange")
+show_palette("atomic_blue")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-8-10.png)<!-- -->
+
+``` r
+show_palette("atomic_orange")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-8-11.png)<!-- -->
 
 # Background
 
