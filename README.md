@@ -217,6 +217,8 @@ the hallway. I walk down that hallway every day since the linguistics
 books, the [DigiLab](https://digi.uga.edu), the best study room on
 campus, and my personal carrell are all on that floor.
 
+![](third_floor.JPG)
+
 In fall 2019 I put together [a series of
 workshops](http://joeystanley.com/pages/dataviz) on data visualization.
 [One of them](http://joeystanley.com/downloads/191023-color.pdf) was
