@@ -1,7 +1,7 @@
 Package: futurevisions
 Type: Package
 Title: Color Palettes based on Visions of the Future Poster Series
-Version: 0.1.0
+Version: 0.1.1
 Date: 2020-02-11
 Author: Joey Stanley
 Maintainer: Joey Stanley <joeystan@uga.edu>

@@ -2,12 +2,18 @@
 % Please edit documentation in R/futurevisions.R
 \name{futurevisions}
 \alias{futurevisions}
+\alias{fv}
 \title{Access Visions of the Future color palettes}
 \usage{
-futurevisions(palette)
+futurevisions(palette, ids = 0)
+
+fv(palette, ids = 0)
 }
 \arguments{
-\item{palette}{a string.}
+\item{palette}{A string.}
+
+\item{ids}{A numeric vector. Indicating which elements of the palette should be returned.
+By default, all values are returned.}
 }
 \value{
 A vector of colors in hexidecimal formant.
@@ -21,8 +27,10 @@ posters, please see https://www.jpl.nasa.gov/visions-of-the-future/
 \details{
 Current options are "venus", "earth", "mars", "jupiter",
 "ceres", "enceladus", "europa", "titan",
-"cancri", "hd", "kepler186", "kepler 16b", "pegasi", "pso", "trappest",
+"cancri", "hd", "kepler186", "kepler16b", "pegasi", "pso", "trappest",
 grand_tour", "atomic_clock", "atomic_red", "atomic_blue", and "atomic_orange".
+
+\code{fv()} is a shorthand version of \code{futurevisions()}.
 }
 \examples{
 futurevisions("mars")
