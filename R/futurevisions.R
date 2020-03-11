@@ -22,12 +22,13 @@
 #'
 #' @examples
 #' futurevisions("mars")
-#' futurevisions("pso")
+#' futurevisions("pso", 1:4)
+#' fv("pso", 1:4)
 #'
 #' require(ggplot2)
 #' ggplot(mpg, aes(cty, hwy, color = factor(cyl))) +
 #'    geom_jitter() +
-#'    scale_color_manual(values = futurevisions("mars"))
+#'    scale_color_manual(values = fv("mars", 1:4))
 
 futurevisions <- function(palette, ids = 0) {
 
