@@ -12,11 +12,11 @@ fv(palette, ids = 0)
 \arguments{
 \item{palette}{A string.}
 
-\item{ids}{A numeric vector. Indicating which elements of the palette should be returned.
+\item{ids}{A numeric vector indicating which elements of the palette should be returned.
 By default, all values are returned.}
 }
 \value{
-A vector of colors in hexidecimal formant.
+A vector of strings indicating colors in hexidecimal formant.
 }
 \description{
 This function returns one of several color palettes based on the Visios of the Future
@@ -34,10 +34,11 @@ grand_tour", "atomic_clock", "atomic_red", "atomic_blue", and "atomic_orange".
 }
 \examples{
 futurevisions("mars")
-futurevisions("pso")
+futurevisions("pso", 1:4)
+fv("pso", 1:4)
 
 require(ggplot2)
 ggplot(mpg, aes(cty, hwy, color = factor(cyl))) +
    geom_jitter() +
-   scale_color_manual(values = futurevisions("mars"))
+   scale_color_manual(values = fv("mars", 1:4))
 }
