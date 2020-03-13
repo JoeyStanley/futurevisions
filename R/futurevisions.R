@@ -9,6 +9,8 @@
 #' @param palette A string.
 #' @param ids A numeric vector indicating which elements of the palette should be returned.
 #' By default, all values are returned.
+#' @param rev A logical. If \code{TRUE}, the values will be returned in the opposite order.
+#' \code{FALSE} by default.
 #'
 #' @return A vector of strings indicating colors in hexidecimal formant.
 #'
@@ -22,6 +24,7 @@
 #'
 #' @examples
 #' futurevisions("mars")
+#' futurevisions("mars", rev = TRUE)
 #' futurevisions("pso", 1:4)
 #' fv("pso", 1:4)
 #'
@@ -30,7 +33,7 @@
 #'    geom_jitter() +
 #'    scale_color_manual(values = fv("mars", 1:4))
 
-futurevisions <- function(palette, ids = 0) {
+futurevisions <- function(palette, ids = 0, rev = FALSE) {
 
   values <- switch(as.character(tolower(palette)),
 
@@ -68,11 +71,17 @@ futurevisions <- function(palette, ids = 0) {
   if (missing(ids)) {
     ids <- 1:length(values)
   }
-  if (!is.numeric(ids)) stop(paste0("The 'ids' argument must be a number or a numeric vector.
+  if (!is.numeric(ids)) {
+    stop(paste0("The 'ids' argument must be a number or a numeric vector.
          For example, to get the first element of the ", palette, " palette, type: fv(\"mars\", 1)
          To get the first three elements of the ", palette, " palette, type: fv(\"mars\", 1:3)
          To get the first and third through fifth element of the ", palette, " palette, type: fv(\"mars\", c(1,3:5))"))
-  values[ids]
+  }
+  if (rev) {
+    ids <- rev(ids)
+  }
+
+  return(values[ids])
 }
 
 #' @rdname futurevisions

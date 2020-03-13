@@ -5,15 +5,18 @@
 \alias{fv}
 \title{Access Visions of the Future color palettes}
 \usage{
-futurevisions(palette, ids = 0)
+futurevisions(palette, ids = 0, rev = FALSE)
 
-fv(palette, ids = 0)
+fv(palette, ids = 0, rev = FALSE)
 }
 \arguments{
 \item{palette}{A string.}
 
 \item{ids}{A numeric vector indicating which elements of the palette should be returned.
 By default, all values are returned.}
+
+\item{rev}{A logical. If \code{TRUE}, the values will be returned in the opposite order.
+\code{FALSE} by default.}
 }
 \value{
 A vector of strings indicating colors in hexidecimal formant.
@@ -34,6 +37,7 @@ grand_tour", "atomic_clock", "atomic_red", "atomic_blue", and "atomic_orange".
 }
 \examples{
 futurevisions("mars")
+futurevisions("mars", rev = TRUE)
 futurevisions("pso", 1:4)
 fv("pso", 1:4)
 
