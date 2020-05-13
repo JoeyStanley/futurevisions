@@ -4,7 +4,7 @@ Title: Color Palettes based on Visions of the Future Poster Series
 Version: 0.1.1
 Date: 2020-02-11
 Author: Joey Stanley
-Maintainer: Joey Stanley <joeystan@uga.edu>
+Maintainer: Joey Stanley <joey_stanley@byu.edu>
 Description: A small R package with color palettes based on NASA's
     Visions of the Future poster series. It contains one primary
     function (`futurevisions`) that returns one palette.
