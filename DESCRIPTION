@@ -8,10 +8,10 @@ Maintainer: Joey Stanley <joey_stanley@byu.edu>
 Description: A small R package with color palettes based on NASA's
     Visions of the Future poster series. It contains one primary
     function (`futurevisions`) that returns one palette.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: http://github.com/JoeyStanley/futurevisions
 RoxygenNote: 7.0.2
 Suggests:
-  ggplot2
+  ggplot2 (>= 3.0.0)
