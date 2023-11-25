@@ -115,7 +115,7 @@ show_palette <- function(palette) {
     geom_text(aes(label = color), y = -0.04) +
     scale_fill_identity() +
     scale_x_continuous(expand = c(0, 0)) +
-    scale_y_continuous(expand = expand_scale(c(0, 0), c(0.1, 0.01)))+
+    scale_y_continuous(expand = expansion(c(0, 0), c(0.1, 0.01)))+
     labs(title = palette) +
     theme_void() +
     theme(legend.position = "none",
